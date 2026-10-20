@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-navy-950 text-slate-200 antialiased;
+  background-image: radial-gradient(60rem 30rem at 80% -10%, rgba(139, 92, 246, 0.18), transparent), radial-gradient(50rem 30rem at 0% 0%, rgba(59, 130, 246, 0.15), transparent);
+}
+
+.grad {
+  @apply bg-gradient-to-r from-electric to-violet-500;
+}
+
+.grad-text {
+  @apply bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent;
+}
+
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-sky-400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
